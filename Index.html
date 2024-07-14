@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Product Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROZbTOjxyGFPG-ih9jbHOw7Ps78-m70fLhVg&s" type="image/icon">
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0%;
+            margin: 0%;
+        }
+    
+        
+        .nav{
+            display: flex;
+            margin: 15px;
+            border: 3px solid rgb(248, 248, 247);
+            box-sizing: 3px;
+        }
+        
+        .nav img{
+            border-radius: 50%;
+            height: 30px;
+            height: 30px;
+        }
+        .nav img:hover{
+            transform: skew(35deg);
+        }
+        .rend{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(86, 86, 255);
+            border: 2px solid white;
+            color: white;
+            height: 3rem;
+            position: relative;
+            border-radius: 10px;
+        bottom: 13px;
+        }
+        @keyframes move{
+
+            0%{
+                trnsform:translate(0);
+            }
+            50%{
+                transform:translate(100px);
+            }
+            100%{
+                transform:translate(100vw);
+            }
+        }
+        p{
+            margin: 9px;
+            font-size: small;
+            transition: 2s all;
+            animation:move 3s linear infinite;
+            
+        }
+
+        .header{
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            align-items: center;  
+            margin: 5px;  
+
+        }
+        .header a{
+            text-decoration: none;
+            color: black;
+            margin: 5px;
+        }
+        #i{
+            color: red;
+        }
+        .ICON i{
+            margin: 10px;
+        }
+        .header select{
+            background-color: rgb(216, 43, 110);
+            border-radius: 8px;
+        }
+    select:hover{
+        background-color: rgb(80, 80, 255);
+    }
+       h3:hover{
+        color: rgb(82, 82, 236);
+       }
+       #tro{
+        transition: 3s all;
+       }
+       #tro:hover{
+        transform: translate(30px);
+        color: rgb(82, 82, 233);
+       }
+
+       #heart:hover{
+        color:red;
+       }
+
+       /* Pic of Products*/
+.container{
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto;
+    background-color: whitesmoke;
+    height: auto;
+    width:100vw;
+    margin-top: 10px;
+    position: relative;
+    left: 2rem;
+   
+
+}
+
+.item1 img{
+    height: 100px;
+
+}
+.item3 img{
+    height:100px;
+}
+.item4 img{
+    height:100px;
+}
+.item5 img{
+    height:100px;
+}
+
+.item6 img{
+    height:100px;
+}
+.item2 img{
+    height:auto;
+   
+}
+
+.item2{
+    grid-row: span 5 ;
+    box-shadow: 3px 3px 3px gainsboro;  
+}
+.item3{
+    grid-row:span 5;
+    box-shadow: 3px 3px 3px gainsboro;
+ text-align: center;
+ margin-top: 2rem;
+}
+
+.footer{
+    border: 2px solid gainsboro;
+    background-color: cadetblue;
+    box-sizing: 10px 10px 10px grey;
+    color: black;
+    
+}
+/* card*/
+.cardcont{
+    display: inline-flex;
+    justify-content: space-around;
+    border: 2px solid rgb(106, 106, 228);
+   box-shadow: 5px 5px rgb(106, 106, 228);
+    width: auto;
+    align-items: center;
+    background-color: rgb(221, 221, 221);
+}
+.card1, .card2, .card3{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(89, 126, 207);
+    text-align: center;
+    background-color: rgb(221, 221, 221);
+    width: auto;
+    height: 10em;
+    
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="nav"> 
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROZbTOjxyGFPG-ih9jbHOw7Ps78-m70fLhVg&s" alt="">
+        <h3 title ="Welcome to our Online shop"> Shopify</h3>
+    </div>
+<div class="rend">
+    <p> EVERYTHING 60% OFF ARCHIVE BALE-DISCOUNT APPLIED IN CART</p>
+    <div class="H">
+        <P> FREE SHIPPING ON OFFERS</P>
+    </div>
+</div>
+<!-- header containing nav section -->
+<div class="header">
+  
+        <a href="#women"> Women</a>
+    <a href="C:\Users\HP\Desktop\Product Page\men.html">Men</a>
+    <a id="i"href="">Archive Sales</a>
+
+<div class="h">
+    <h3>AM🥼IT</h3>
+</div>
+   
+    
+
+    <div class="ICON">
+        <i class="fas fa-search icon"></i>
+        <i id="heart"class="fas fa-heart icon"></i>
+        <i id ="tro" class="fas fa-shopping-cart icon"></i>
+    </div>
+        <form >
+            <select name="Country" id="Cntry">
+                <option style="display: none;"value="">Country</option>
+                <option value="Canada">Canada</option>
+                <option value="india">India</option>
+                <option value="USA">America</option>
+                <option value="UK">UK</option>
+            </select>
+
+        </form>
+    
+</div>
+
+<!-- Grid for main content -->
+<div id ="women" class="container">
+
+    <div class="item item1">
+        <img src="https://blissclub.com/cdn/shop/files/61.jpg?v=1702016627&width=720" alt="">
+    </div>
+
+    <div class="item item2">
+        <img src="https://blissclub.com/cdn/shop/files/Thumbnail-1_6e290c5a-75a7-4e1b-b885-a34a3967160e.jpg?v=1703666587&width=400" alt="">
+    </div>
+
+    <div class="item item3">
+        <h2> WAVE TEE</h2>
+        <pre>Tech joursey</pre>
+       <pre> <s>$79.00</s> $59.00</pre>
+       <pre>A demanding t-shirt with $14off @</pre>
+       <br>
+
+    <form>
+        <label for="black">Select color</label>
+        <input style="background-color: rgb(82, 82, 233);"type="radio" id ="black" >
+        <input type="radio" id ="black">
+        <input type="radio" id ="black">
+    </form>
+
+     <br>
+
+    <button style="background-color: rgb(82, 82, 233);"  id="Buy"> Buy Now</button>
+    <button style="background-color: rgb(82, 82, 233);"  id="Buy"> ADD Cart</button>
+    </div>
+
+    <div class="item item4">
+        <img src="https://blissclub.com/cdn/shop/files/61.jpg?v=1702016627&width=720" alt="">
+    </div>
+
+    <div class="item item5">
+        <img src="https://blissclub.com/cdn/shop/files/61.jpg?v=1702016627&width=720" alt="">
+    </div>
+
+    <div class="item item6">
+        <img src="https://blissclub.com/cdn/shop/files/61.jpg?v=1702016627&width=720" alt="">
+    </div>
+    
+</div>
+
+<!-- footer -->
+<fieldset>
+    <lagend style="text-align: center;">Thanks For Visiting</lagend>
+    <div class="cardcont">
+        <div class="card1">
+            <i class="fas fa-dollar-sign icon"></i>
+            <h3>Exciting Offers</h3>
+            <pre>We are offering 70%-80% off <br> on each product so what you are waiting for</pre>
+            <a href="">Explore</a>
+        </div>
+
+     
+            <div class="card2">
+                <i class="fas fa-dollar-sign icon"></i>
+                <h3>Exciting Offers</h3>
+                <pre>We are offering 70%-80% off <br> on each product so what you are waiting for</pre>
+                <a href="">Explore</a>
+            </div>
+
+                <div class="card3">
+                    <i class="fas fa-dollar-sign icon"></i>
+                    <h3>Exciting Offers</h3>
+                    <pre>We are offering 70%-80% off <br> on each product so what you are waiting for</pre>
+                    <a href="">Explore</a>
+                </div>
+    </div>
+
+</fieldset>
+</body>
+</html>
